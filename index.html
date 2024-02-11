@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Coming Soon 11</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Stylesheets -->	<link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
+		
+	<!-- <link href="01-comming-soon/css/styles.css" rel="stylesheet"> -->
+	
+	<link href="01-comming-soon/css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: black;">
+
+		<div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-120">
+			<h3 class="l1-txt1 txt-center p-b-35 respon1">
+				Countdown for the Fest
+			</h3>
+			<div id="rounded-countdown">
+			<div class="flex-w flex-c cd100 respon2">
+				<div class="flex-col-c wsize1 m-b-30">
+					<span class="l1-txt2 p-b-37 days">15</span>
+					<span class="m1-txt2 p-r-20">Days</span>
+				</div>
+
+				<span class="l1-txt2 p-t-15 dis-none-sm">:</span>
+
+				<div class="flex-col-c wsize1 m-b-30">
+					<span class="l1-txt2 p-b-37 hours">17</span>
+					<span class="m1-txt2 p-r-20">Hr</span>
+				</div>
+
+				<span class="l1-txt2 p-t-15 dis-none-lg">:</span>
+
+				<div class="flex-col-c wsize1 m-b-30">
+					<span class="l1-txt2 p-b-37 minutes">50</span>
+					<span class="m1-txt2 p-r-20">Min</span>
+				</div>
+
+				<span class="l1-txt2 p-t-15 dis-none-sm">:</span>
+
+				<div class="flex-col-c wsize1 m-b-30">
+					<span class="l1-txt2 p-b-37 seconds">39</span>
+					<span class="m1-txt2 p-r-20">Sec</span>
+				</div>
+			</div>
+			</div>
+		</div>
+
+	
+
+
+
+	
+
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	 
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 15,
+			endtimeHours: 19,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+</body>
+</html>
